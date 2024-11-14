@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+   <style>
+    body{
+    background-color: rgb(255, 193, 193);
+    margin:0;
+    padding: 0;
+    font-family:pt sans-serif;
+    
+  }
+  #menu{
+    width: 35px; ;
+    height: 30px; ;
+    margin: 30px 0 20px 20px;
+    cursor:pointer ;
+    z-index:100 ;
+  }
+  .bar{
+    height: 5px;
+    width: 100%;
+    background-color: #aa0909;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+  }
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(4px);
+  }
+ .nav li a{
+    color:#570101;
+    text-decoration: none;
+  }
+
+.nav li a:hover{
+    color: #7a0303;
+    padding: 5px 15px;
+}
+  
+
+.nav li{
+list-style:none ;
+padding: 16px 0;
+}
+.nav {
+padding: 0;
+margin: 0 20px;
+transition:1s ease ;
+display: none;
+}
+.icon .bar{
+background-color:#bd0c0c ;
+
+}
+.icon #bar1{
+transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3{
+transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2{
+opacity: 0;
+}
+.change{
+height: 71vh;
+margin: 0;
+padding-left: 20px;
+position: absolute;
+font-size: 30px;
+top:0;
+z-index: -100;
+width: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+/* Footer styling */
+.footer {
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px; /* Space between the two link lists */
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.link-item {
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.link-item:hover {
+    color: brown;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-image {
+    max-width: 500px; /* Control the image size */
+    height: auto;
+}
+
+
+   </style>
+   
+</head>
+<body>
+    <!-- nav bar -->
+   
+   
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+
+            <div id="navigation">
+                <div id="menu" onclick="onclickMenu()">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+              
+                </div>
+                <ul class="nav" id="nav">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Type</a></li>
+                </ul>
+
+              </div>
+          <a class="navbar-brand m-1 fw-bold" href="#"><h1><span class="text-danger fw-bold">Anime</span>verse</h1></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+             
+                <li class="nav-item" style="margin-left: 850px ;" >
+                    <input type="button" value="Login" class="btn btn-danger">
+                    </li>
+                    <li style="margin-left:6px;">
+                    <input type="button" value="Sign-in" class="btn btn-danger">
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+       <!-- end of nav bar  -->
+
+       <!-- header of website -->
+
+<div class="container-fluid text-center p-5">
+    <h1 class="display-3  text-dark"><span class="text-danger">Anime</span>verse</h1>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 col-md-6"> <!-- Adjust column widths as needed -->
+            <form class="d-flex" role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    <p class="fs-9">A better place for an OTAKU to watch their favourite Anime</p>
+    <input type="button" value="Go to home" class="btn btn-lg btn-danger" onclick="">
+</div>
+
+       <!-- end of ender of my website  -->
+       <!-- body of webite  -->
+       <div class="container">
+        <p>Welcome to Animeverse, the ultimate destination for anime enthusiasts worldwide! Dive into our extensive collection, 
+          featuring classics that have shaped the genre and the latest sensations that are taking the world by storm.
+           Whether you're a die-hard otaku or new to the vibrant world of anime, our platform offers a meticulously
+            curated selection catering to all tastes. Enjoy high-definition streaming, insightful reviews, and an 
+            engaged community passionate about discussing plot twists, character developments, and fan theories. From action-packed shonen epics to heart-wrenching romance tales,Animeverse ensures an immersive experience, bringing the magic of anime right to your screens. Join us, explore endless worlds, and be part of the global anime revolution!</p>
+            <h1 class="mt-h-medium">Explore the Animeverse Universe</h1>
+            <p>At Animeverse, we invite you to embark on a journey into the vast and enchanting Animeverse Universe. With an extensive library of anime series and movies, we offer an unparalleled experience for fans of all genres. Immerse yourself in the intricate worlds of action, adventure, fantasy, romance, and more, as we curate the best of anime's diverse landscape. Our mission is to be your gateway to the Animeverse, where every episode is an adventure and every character becomes a friend.</p>
+            <h1 class="mt-h-medium">Stream in Style and Quality</h1>
+            <p>Animeverse takes your anime streaming experience to the next level. Enjoy your favorite shows and movies in stunning high-definition, with smooth playback and minimal interruptions. We prioritize quality, ensuring that each frame is a masterpiece. Whether you're binge-watching classics or keeping up with the latest releases, Animeverse is your trusted companion for top-notch streaming.</p>
+            <h1 class="mt-h-medium">Connect with Fellow Otaku</h1>
+            <p>Join a vibrant community of fellow otaku and anime enthusiasts on Animeverse. Engage in lively discussions, share your insights through reviews and ratings, and forge lasting friendships with like-minded fans. From debating the best anime moments to speculating on the next season's plot twists, Animeverse is where your passion for anime truly connects.</p>
+            <h1 class="mt-h-medium">Personalized Recommendations</h1>
+            <p>At Animeverse, we understand that every anime fan is unique. That's why we offer personalized recommendations tailored to your taste. Our advanced algorithms analyze your viewing history and preferences to suggest anime titles you're bound to love. Discover hidden gems and explore new horizons within the Animeverse with our tailored recommendations.</p>
+            <h1 class="mt-h-medium">Dive into the Archives</h1>
+            <p>Animeverse is not just about what's trending; it's a treasure trove of anime history. Delve into our archives to rediscover timeless classics that have left an indelible mark on the medium. From the pioneers of anime storytelling to iconic moments in animation history, our collection pays homage to the legacy of the Animeverse.</p>
+            <h1 class="mt-h-medium">Your Animeverse, Your Way</h1>
+            <p>Your journey in the Animeverse is yours to shape. Customize your profile, create watchlists, and track your anime-watching progress. With Animeverse, you have the power to curate your own anime experience. Whether you're a casual viewer or a devoted fan, we're here to enhance your connection with the Animeverse, one episode at a time.
+      <br>
+      <br>
+              Animeverse is more than a website; it's a gateway to a world of imagination, emotion, and adventure. Join us, and let the Animeverse enchant you like never before.</p>
+      </div>
+       <!-- end of body  -->
+       <!-- footer of website -->
+       <div class="container-fluid bg-dark text-danger footer">
+        <div class="footer-content">
+            <!-- Left Section with Title and Links -->
+            <div class="footer-left">
+                <h1 class="display-2 fw-bold">
+                    <span class="text-danger">ANIME</span><span class="text-white">VERSE</span>
+                </h1>
+                <div class="footer-links">
+                    <ul type="none">
+                        <li><a href="#" class="link-item">Help</a></li>
+                        <li><a href="#" class="link-item">Contact</a></li>
+                        <li><a href="#" class="link-item">FAQ</a></li>
+                        <li><a href="#" class="link-item">Request</a></li>
+                    </ul>
+                    <ul type="none">
+                        <li><a href="#" class="link-item">Links</a></li>
+                        <li><a href="#" class="link-item">Upcoming</a></li>
+                        <li><a href="#" class="link-item">Complete</a></li>
+                        <li><a href="#" class="link-item">Most Popular</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right Section with Image -->
+            <div class="footer-right">
+                <img src="/01_s-removebg-preview.png" alt="img" class="footer-image">
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer end  -->
+    <script>
+      function onclickMenu(){
+  document.getElementById("menu").classList.toggle("icon");
+  document.getElementById("nav").classList.toggle("change");
+}  
+  </script>
+</body>
+</html>
