@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+      background-color: rgb(223, 201, 201);
+      margin:0;
+      padding: 0;
+      font-family:sans-serif;
+      
+    }
+    #menu{
+      width: 35px; ;
+      height: 30px; ;
+      margin: 30px 0 20px 20px;
+      cursor:pointer ;
+      z-index:100 ;
+    }
+    .bar{
+      height: 5px;
+      width: 100%;
+      background-color: #c10505;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s ease;
+
+    }
+    #bar1 {
+      transform: translateY(-4PX);
+    }
+    #bar3 {
+      transform: translateY(4PX);
+    }
+   .nav li a{
+      color:#940707;
+      text-decoration: none;
+    }
+.nav li a:hover{
+  color: #3c0202 ;
+}
+.nav li{
+  list-style:none ;
+  padding: 15px 0;
+}
+.nav{
+  padding: 0;
+  margin: 0 15px;
+  transition:1s ease ;
+  display: none;
+}
+.icon .bar{
+  background-color:#bd0c0c ;
+
+}
+.icon #bar1{
+  transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3{
+  transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2{
+  opacity: 0;
+}
+.change{
+background-color: #998684;
+height: 100vh;
+margin: 0;
+position: absolute;
+font-size: 30px;
+top:0;
+z-index: -100;
+width: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+    </style>
+    <script>
+      function onclickMenu(){
+        document.getElementById("menu").classList.toggle("icon");
+        document.getElementById("nav").classList.toggle("change");
+
+      }    
+      
+      </script>
+</head>
+<body>
+<div id="navigation">
+  <div id="menu" onclick="onclickMenu()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+
+  </div>
+  <ul class="nav" id="nav">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Genres</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Type</a></li>
+  </ul>
+</div>
+
+
+</body>
+</html>
